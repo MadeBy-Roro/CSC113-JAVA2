@@ -1,0 +1,39 @@
+class contact {
+private String name;
+private int mobileNum;
+private String email;
+private String address;
+public static int counter = 0;
+contact(String n, int mNum, String e , String a){
+this.name = n;
+this.mobileNum = mNum;
+this.email = e;
+this.address = a;
+counter++;
+}
+public void setEmail(String e){
+this.email = e;
+ }
+public static int getCounter(){
+return counter;
+ }
+public int getMoblie(){
+return mobileNum;
+ }
+public void display(){
+System.out.println("Name " + name);
+System.out.println("MobileNum " + mobileNum);
+System.out.println("email " + email);
+System.out.println("Address " + address);
+System.out.println("--------------------");
+} 
+}
+public class main {
+ public static void main(String[] args) {
+contact p1 = new contact("Sara", 0551122, "Sara@gmail.com", "Riyadh");
+contact p2 = new contact("Norah", 0553344, "Norah@gmail.com", "Jeddah");
+ p1.display();
+ p2.display();
+System.out.println(" number of objects of class contact " +contact.getCounter());
+}
+} 
