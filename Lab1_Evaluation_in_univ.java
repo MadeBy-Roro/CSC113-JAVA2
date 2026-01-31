@@ -43,7 +43,7 @@ public void display(){
 
 }
     
-public class main {
+public class Lab1_Evaluation_in_univ {
    public static void main(String[] args) {
    
    contact p1 = new contact("Sara", 0551122, "Sara@gmail.com", "Riyadh");
@@ -56,3 +56,4 @@ public class main {
 
    }
 }  
+
